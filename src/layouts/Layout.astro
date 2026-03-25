@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css'
 import HeaderMain from '../components/HeaderMain.vue';
+import FooterMain from '../components/FooterMain.vue';
 
 // Ambil path URL saat ini (misal: /about)
 const pathname = new URL(Astro.url).pathname;
@@ -23,7 +24,8 @@ const pathname = new URL(Astro.url).pathname;
 	<body>
 	<div class="relative">
 		<HeaderMain currentPath={pathname} client:load />
-		<slot />
+			<slot />
+		<FooterMain />
 	</div>
 	</body>
 </html>
