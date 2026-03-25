@@ -1,20 +1,29 @@
 <template>
-    <footer class="bg-slate-900 text-white py-15 xl:py-20 px-8">
+    <footer class="relative w-full bg-slate-900 text-white py-15 xl:py-20 px-8">
+
         <div class="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-10 text-sm/6">
             
             <div>                
-                <img :src="velocityLogo.src" class="mr-3 h-6 sm:h-10" alt="Velocity Logo" />
+                <img :src="velocityLogo.src" class="mr-3 h-6 sm:h-10 mb-10" alt="Velocity Logo" />
 
-                <div class="my-10 flex items-center gap-3">
+                <div>
+                    <p>
+                        Kebonagung RT 04/ RW 01, Jarum, Bayat, Klaten, Jawa Tengah. Kode Pos: 57462
+                    </p><br>
+                    <p>
+                        Email:<br>bantuanvdc@gmail.com
+                    </p><br>
+                    <p>
+                        WA:<br>Cek di menu cara pemesanan atau pada icon wa (pojok kanan bawah)
+                    </p>
+                </div>
+                <div class="mt-10 flex items-center gap-3">
                     <template v-for="item in sosmed">                    
-                        <a class="inline-block bg-white rounded-full overflow-hidden" :href="item.url" target="_blank">
-                            <img src="https://s.magecdn.com/social/tc-facebook.svg" class="w-10"/>
+                        <a class="inline-block bg-white rounded-full overflow-hidden border border-slate-600 opacity-50 hover:opacity-100" :href="item.url" target="_blank">
+                            <img :src="'https://s.magecdn.com/social/tc-'+item.icon+'.svg'" class="w-10 rounded-full"/>
                         </a>
                     </template>
                 </div>
-                <p>
-                    Kebonagung RT 04/ RW 01, Jarum, Bayat, Klaten, Jawa Tengah. Kode Pos: 57462
-                </p>
             </div>
 
             <div>
@@ -52,23 +61,25 @@
             </div>
 
             <div>
-                <img :src="ImgTimVelocity.src" class="rounded-4xl w-full mb-5" alt="Velocity Logo" />
-                <div>
-                    <p>CV. Velocity Developer Indonesia</p><br>
-                    <p>
-                        Kantor:<br>Kebonagung RT 04/ RW 01, Jarum, Bayat, Klaten, Jawa Tengah. Kode Pos: 57462</p>
-                    <p>
-                        Email:<br>bantuanvdc@gmail.com</p>
-                    <p>
-                        WA:<br>Cek di menu cara pemesanan atau pada icon wa (pojok kanan bawah)
-                    </p>
+                <div class="font-bold text-lg mb-2">
+                    Informasi
                 </div>
+                <div class="text-sm/7 text-gray-400">
+                    <ul>
+                        <li v-for="item in informasi">
+                            <a :href="item.url">
+                                {{ item.title }}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img :src="ImgTimVelocity.src" class="rounded-4xl w-full mt-15" alt="Velocity Logo" />
             </div>
 
         </div>
 
-        <div class="mx-auto max-w-7xl text-xs/6 border-t border-slate-800 mt-20 pt-10">
-
+        <div class="mx-auto max-w-7xl text-sm/6 border-t border-slate-800 mt-20 pt-10">
+            Copyright © {{ currentYear }} Jasa Pembuatan Website, Bikin Web Murah, Profile, Toko Online, Sekolah, Berita
         </div>
 
     </footer>
@@ -77,24 +88,25 @@
 <script setup>
 import velocityLogo from '../assets/velocity-logo.png';
 import ImgTimVelocity from '../assets/tim_velocity.jpg';
-import { Facebook } from 'lucide-vue-next';
+
+const currentYear = new Date().getFullYear();
 
 const sosmed = [
     {
         icon:'facebook',
-        url: 'https://www.facebook.com/RumahwebIndonesia/'
+        url: 'https://www.facebook.com/velocitydeveloper/'
     },
     {
-        icon:'facebook',
-        url: 'https://www.facebook.com/RumahwebIndonesia/'
+        icon:'x',
+        url: 'https://www.x.com/velocitydeveloper/'
     },
     {
-        icon:'facebook',
-        url: 'https://www.facebook.com/RumahwebIndonesia/'
+        icon:'instagram',
+        url: 'https://www.instagram.com/velocitydeveloper/'
     },
     {
-        icon:'facebook',
-        url: 'https://www.facebook.com/RumahwebIndonesia/'
+        icon:'youtube',
+        url: 'https://www.youtube.com/velocitydeveloper/'
     },
 ]
 
@@ -105,5 +117,24 @@ const jasaPembuatan = [
     'Jasa Pembuatan Website Desa',
     'Jasa Pembuatan Web Rental Mobil',
     'Jasa Pembuatan Web Sekolah'
+]
+
+const informasi = [
+    {
+        title:'Tentang Kami',
+        url: '/tentang-kami'
+    },
+    {
+        title:'Pembayaran',
+        url: '/pembayaran'
+    },
+    {
+        title:'Kebijakan Privasi',
+        url: '/kebijakan-privasi'
+    },
+    {
+        title:'Syarat & Ketentuan',
+        url: '/syarat-dan-ketentuan'
+    },
 ]
 </script>
