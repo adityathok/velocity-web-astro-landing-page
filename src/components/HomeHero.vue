@@ -48,7 +48,7 @@
                     Jasa Pembuatan Website <br>Terpercaya Sejak 2008
                 </div>
                 <div class="md:max-w-xl text-sm md:text-base">
-                    Gratis pemanduan, Garansi hacker,<br> Dan mempunyai 5.000 klien aktif diseluruh dunia.<br> Berdiri sejak 2008
+                    Gratis pemanduan, Garansi hacker,5.000 klien aktif diseluruh dunia.<br> Berdiri sejak 2008
                 </div>
                 <div class="flex justify-center items-center md:justify-start gap-1">
                     <Button :link="'harga-web'">Harga Web</Button>
