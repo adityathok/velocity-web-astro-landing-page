@@ -5,6 +5,15 @@ import FooterMain from '../components/FooterMain.vue';
 
 // Ambil path URL saat ini (misal: /about)
 const pathname = new URL(Astro.url).pathname;
+
+//SEO props
+const {
+  title = 'Velocity Developer',
+  description = 'Jasa Pembuatan Website, Bikin Web Murah, Profile, Toko Online, Sekolah, Berita',
+  keywords = 'Jasa Pembuatan Website, Bikin Web Murah, Profile, Toko Online, Sekolah, Berita',
+  image = '/default-og.jpg',
+  noindex = false
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -15,7 +24,20 @@ const pathname = new URL(Astro.url).pathname;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Jasa Pembuatan Website, Bikin Web Murah, Profile, Toko Online, Sekolah, Berita | Velocity Developer</title>
+
+		 <!-- Basic SEO -->
+		<title>{title} | {description}</title>
+		<meta name="description" content={description} />
+		<meta name="keywords" content={keywords} />
+
+		 <!-- Robots -->
+		{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+		<!-- Open Graph -->
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:image" content={image} />
+		<meta property="og:type" content="website" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
