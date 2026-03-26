@@ -55,7 +55,11 @@
                 </div>
                 <div class="text-sm/7 text-gray-400">
                     <ul>
-                        <li v-for="item in jasaPembuatan"> {{ item }} </li>
+                        <li v-for="item in jasaPembuatans"> 
+                            <a :href="item.url">
+                                {{ item.title }}
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -110,13 +114,13 @@ const sosmed = [
     },
 ]
 
-const jasaPembuatan = [
-    'Jasa Pembuatan Website Perusahaan',
-    'Jasa Pembuatan Website Pemerintah',
-    'Jasa Pembuatan Toko Online',
-    'Jasa Pembuatan Website Desa',
-    'Jasa Pembuatan Web Rental Mobil',
-    'Jasa Pembuatan Web Sekolah'
+const jasaPembuatans = [
+    { title : 'Jasa Pembuatan Website Perusahaan', url: '/com' },
+    { title : 'Jasa Pembuatan Website Pemerintah', url: '/pemerintah' },
+    { title : 'Jasa Pembuatan Toko Online', url: '/to' },
+    { title : 'Jasa Pembuatan Website Desa', url: '/desa' },
+    { title : 'Jasa Pembuatan Web Rental Mobil', url: '/rentalmobil' },
+    { title : 'Jasa Pembuatan Web Sekolah', url: '/pendidikan' }
 ]
 
 const informasi = [
