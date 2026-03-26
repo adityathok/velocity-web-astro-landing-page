@@ -23,7 +23,7 @@ const pathname = new URL(Astro.url).pathname;
 	</head>
 	<body>
 	<div class="relative text-gray-800">
-		<HeaderMain currentPath={pathname} client:load />
+		<HeaderMain currentPath={pathname} client:load/>
 			<slot />
 		<FooterMain />
 	</div>

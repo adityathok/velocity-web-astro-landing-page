@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SearchDomainTable from '../components/SearchDomainTable.vue';
+---
+
+<Layout>	
+	<div id="container">
+		<main>
+            <div class="relative overflow-hidden min-h-[50vh] xl:min-h-[35vh] bg-slate-800 flex items-center justify-center text-white p-10">
+
+                <div class="absolute top-0 right-0 opacity-20 max-w-25 md:max-w-3xl">                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="480" width="480" viewBox="0 0 480 480"><path d="M240 240A240 240 0 0 0 0 480a240 240 0 0 0 240-240ZM240 240A240 240 0 0 0 0 0a240 240 0 0 0 240 240ZM480 0a240 240 0 0 0-240 240A240 240 0 0 0 480 0ZM480 480a240 240 0 0 0-240-240 240 240 0 0 0 240 240Z" fill="#FFFFFF"></path></svg>
+                </div>
+
+                <div class="relative z-1 mx-auto max-w-7xl text-center">
+                    <h1 class="text-xl font-bold md:text-5xl mb-3">
+                        Cari domain untuk websitemu
+                    </h1>
+                    <p>Mulai online dengan domain sebagai brand Anda di dunia maya.</p>
+                </div>
+            </div>	
+            <SearchDomainTable client:load/>
+        </main>	          
+    </div>
+</Layout>
