@@ -1,5 +1,5 @@
 <template>
-    <section id="hero" class="relative w-full text-white bg-linear-to-r from-blue-800 to-sky-600 pt-30 px-6 md:px-0 md:pt-20 md:pb-10">			
+    <section id="hero" class="relative w-full text-white bg-linear-to-r from-blue-800 to-sky-600 pt-30 px-6 md:px-10 xl:px-0 md:pt-20 md:pb-10">			
         <div
             class="absolute inset-0 z-0 opacity-50"
             style="
@@ -41,10 +41,10 @@
                 -webkit-mask-composite: source-in;
             "
         />
-        <div class="flex flex-col md:flex-row items-center md:justify-between mx-auto max-w-7xl min-h-[40em] md:min-h-screen xl:min-h-[50vh] relative z-1">
-            <div class="md:basis-1/2 space-y-8 text-center md:text-left">
+        <div class="flex flex-col md:flex-row items-center md:justify-between mx-auto max-w-7xl min-h-[40em] md:min-h-[50vh] relative z-1">
+            <div class="md:basis-lg xl:basis-1/2 space-y-8 text-center md:text-left pb-4 md:pr-4">
                 
-                <div class="font-extrabold text-3xl md:text-5xl">
+                <div class="font-extrabold text-3xl md:text-4xl xl:text-5xl">
                     Jasa Pembuatan Website <br>Terpercaya Sejak 2008
                 </div>
                 <div class="md:max-w-xl text-sm md:text-base">

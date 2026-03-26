@@ -1,5 +1,5 @@
 <template>
-    <section id="searchdomain" class="py-10 bg-teal-500 px-6 md:px-0">
+    <section id="searchdomain" class="py-10 bg-teal-500 px-6">
         <div class="md:flex items-center justify-between mx-auto max-w-7xl">
             <div class="md:basis-1/2 text-center md:text-left">
                 
@@ -14,9 +14,9 @@
 
             </div>
             <div class="md:flex-1 mt-10 md:mt-0">
-                <form class="flex bg-white border border-gray-200 px-3 py-2 w-full rounded-full">
-                    <input class="border-0! px-3 py-2 w-full rounded-full" placeholder="Cari domain ...">
-                    <Button type="button" class="px-5! py-2!">
+                <form method="GET" action="/search-domain" class="flex bg-white border border-gray-200 px-3 py-2 w-full rounded-full">
+                    <input class="border-0! px-3 py-2 w-full rounded-full" name="key" placeholder="Cari domain ...">
+                    <Button type="submit" class="px-5! py-2!">
                         <Search />
                     </Button>
                 </form>
