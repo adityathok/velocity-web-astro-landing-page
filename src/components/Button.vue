@@ -36,7 +36,7 @@ const props = defineProps({
 const style = 'px-10 py-3 rounded-full text-white inline-block transition-shadow duration-300 hover:shadow-m cursor-pointer';
 
 const styleColor  = computed(() => {
-  return props.color=='primary'?'bg-amber-600 hover:bg-amber-700':'bg-gray-900 hover:bg-gray-950';
+  return props.color=='primary'?'bg-amber-600 hover:bg-amber-700':'bg-slate-900 hover:bg-slate-950';
 });
 
 </script>
