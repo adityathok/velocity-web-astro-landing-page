@@ -20,7 +20,7 @@
                 <div class="mt-10 flex items-center gap-3">
                     <template v-for="item in sosmed">                    
                         <a class="inline-block bg-white rounded-full overflow-hidden border border-slate-600 opacity-50 hover:opacity-100" :href="item.url" target="_blank">
-                            <img :src="'https://s.magecdn.com/social/tc-'+item.icon+'.svg'" class="w-10 rounded-full"/>
+                            <img :src="'https://s.magecdn.com/social/tc-'+item.icon+'.svg'" :alt="'icon '+item.icon" class="w-10 rounded-full"/>
                         </a>
                     </template>
                 </div>

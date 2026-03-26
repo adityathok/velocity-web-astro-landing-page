@@ -18,7 +18,7 @@
             <div class="md:flex-1 mt-10 md:mt-0">
                 <form method="GET" action="/search-domain" class="flex bg-white border border-gray-200 px-3 py-2 w-full rounded-full">
                     <input class="border-0! px-3 py-2 w-full rounded-full" name="key" v-model="keySearch" placeholder="Cari domain ...">
-                    <Button type="submit" class="px-5! py-2!">
+                    <Button type="submit" class="px-5! py-2!" aria-label="Cari domain">
                         <Search />
                     </Button>
                 </form>
