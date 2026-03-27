@@ -50,7 +50,7 @@
 
                  <div class="col-span-4">
                     <div class="shadow-sm hover:shadow-xl rounded-xl bg-white overflow-hidden">
-                        <div class="px-5 py-5 text-xl md:text-2xl font-bold text-white bg-linear-to-r from-yellow-500 to-amber-600 text-center">
+                        <div class="px-5 py-5 text-xl md:text-2xl font-bold text-white bg-linear-to-r from-yellow-500 to-orange-600 text-center">
                             Web Toko Online
                         </div>
                         <div class="p-8 md:px-15 text-center">
