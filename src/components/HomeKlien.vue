@@ -1,5 +1,5 @@
 <template>
-    <section id="klien" class="px-6 py-12 bg-white">
+    <section id="klien" class="px-6 py-12 md:pt-20 bg-white">
         <div class="mx-auto max-w-7xl">
 
             <h2 class="text-center font-bold text-2xl md:text-4xl mb-6 md:mb-10">
@@ -19,8 +19,8 @@
                 }"
             >
                 <SwiperSlide v-for="(item, i) in items" :key="i">
-                    <div class="text-center px-4">
-                        <img :src="item.img.src" class="h-20 mx-auto" :alt="'klien '+item.title" loading="lazy"/>
+                    <div class="text-center px-4 group">
+                        <img :src="item.img.src" class="h-20 mx-auto opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0" :alt="'klien '+item.title" loading="lazy"/>
                         <div class="text-sm text-slate-600 mt-1 px-4">{{ item.title }}</div>
                     </div>
                 </SwiperSlide>
