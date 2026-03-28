@@ -11,26 +11,19 @@
     </template>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { computed } from 'vue';
 
-const props = defineProps({
-    type:{
-        type: String,
-        default: 'link'
-    },
-    link: {
-        type: String,
-        default: ''
-    },
-    target: {
-        type: String,
-        default: '_self'
-    },
-    color:{
-        type: String,
-        default: 'primary'
-    }
+const props = withDefaults(defineProps<{
+    type?: 'submit' | 'button' | 'link',
+    link?: string,
+    target?: string,
+    color?: 'primary' | 'secondary'
+}>(), {
+    type: 'link',
+    link: '',
+    target: '_self',
+    color: 'primary'
 });
 
 const style = 'px-10 py-3 rounded-full text-white inline-block transition-shadow duration-300 hover:shadow-m cursor-pointer';
