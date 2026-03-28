@@ -12,7 +12,7 @@
                             Web Profile
                         </div>
                         <div class="p-8 md:px-15 text-center">
-                            <img :src="ImgIconOffice.src" width="64" class="object-contain mx-auto mb-5 md:mb-7" alt="Icon Office" />
+                            <img :src="ImgIconOffice.src" width="64" class="object-contain mx-auto mb-5" alt="Icon Office" />
                             <p>Website untuk Perusahaan, Sekolah, Universitas, Rumah Sakit, Pemerintah, Sales Mobil, Personal, Bisnis, Tour Travel, dsb.</p>
                             <p class="mt-15 mb-2 font-medium">
                                 Harga mulai
@@ -105,7 +105,7 @@ const paketSmall = [
     {
         icon: Store,
         title: 'Marketplace',
-        text: 'Pembuatan web marketplace / jualbeli semacam Tokopedia, Shopee.'
+        text: 'Pembuatan web marketplace / jual beli semacam Tokopedia, Shopee.'
     },
     {
         icon: LayoutList,
