@@ -4,6 +4,7 @@ import HomeHero from '../components/HomeHero.vue';
 import HomeSearchDomain from '../components/HomeSearchDomain.vue';
 import HomePaketWeb from '../components/HomePaketWeb.vue';
 import HomeKlien from '../components/HomeKlien.vue';
+import HomeReview from '../components/HomeReview.vue';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -15,7 +16,8 @@ import HomeKlien from '../components/HomeKlien.vue';
 			<HomeHero />		
 			<HomeSearchDomain client:load/>
 			<HomePaketWeb />	
-			<HomeKlien client:load/>		
+			<HomeKlien client:load/>	
+			<HomeReview client:load/>		
 		</main>
 	</div>
 </Layout>
