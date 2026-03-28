@@ -1,0 +1,32 @@
+[
+    {
+        "id": "website_profile",
+        "name" : "Website Profile",
+        "description": "Untuk: Perusahaan, Sekolah, Universitas, Rumah Sakit, Puskesmas, Klinik, Instansi Pemerintah, Sales Mobil, Personal, Bisnis, Tour Travel, Sales Internet, dsb."
+    },
+    {
+        "id": "website_berita",
+        "name" : "Berita / Media Online",
+        "description": "Untuk Portal Berita dan Media Online"
+    },
+    {
+        "id": "website_tokoonline",
+        "name" : "Toko Online",
+        "description": "Untuk: Toko Online Jual Baju, Kosmetik, Komputer, dan Berbagai Barang"
+    },
+    {
+        "id": "website_marketplace",
+        "name" : "Marketplace / Jual beli",
+        "description": "Untuk: Website Jual-Beli semacam Tokopedia, Shopee, OLX, Bukalapak, Lazada, Blibli dan sebagainya. Pengunjung Bisa Memasang Iklan Produk Mereka Sendiri Secara Gratis Ataupun Premium"
+    },
+    {
+        "id": "website_iklanbaris",
+        "name" : "Iklan Baris",
+        "description": "Untuk: Iklan Baris dan Iklan Premium Dimana Pengunjung Dapat Memasang Iklan di Web Anda."
+    },
+    {
+        "id": "website_elearning",
+        "name" : "Web Elearning",
+        "description": "Web ini berfungsi untuk media pembelajaran sekolah yang bisa digunakan untuk mengupload tugas, mengerjakan soal/ tes/ ujian, dan mendownload materi pelajaran. Untuk media pembelajaran antara guru dan siswa."
+    }
+]

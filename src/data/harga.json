@@ -1,0 +1,139 @@
+[
+    {
+        "nama": "Paket E",
+        "harga": 390000,
+        "paket" : "website_profile",
+        "hosting": "150MB",
+        "bandwith": "15GB",
+        "perpanjang": 311000,
+        "link" : "/paket-e-desain",
+        "desain" : "1 pilihan desain",
+        "fitur": []
+    },
+    {
+        "nama": "Paket F",
+        "harga": 500000,
+        "paket" : "website_profile",
+        "hosting": "150MB",
+        "bandwith": "15GB",
+        "perpanjang": 311000,
+        "link" : "/paket-f-desain",
+        "desain" : "20 pilihan desain",
+        "fitur": [
+            "Bisa request warna desain",
+            "Header dan background bisa diganti"
+        ]
+    },
+    {
+        "nama": "Paket G",
+        "harga": 1199000,
+        "paket" : "website_profile",
+        "hosting": "250MB",
+        "bandwith": "25GB",
+        "perpanjang": 381000,
+        "link" : "/paket-g-desain",
+        "desain" : "Desain professional, mewah dan custom (bisa mengajukan desain sendiri)",
+        "fitur": [
+            "Ada Slidernya"
+        ]
+    },
+    {
+        "nama": "Paket Portal Berita Biasa",
+        "harga": 390000,
+        "paket" : "website_berita",
+        "hosting": "150MB",
+        "bandwith": "15GB",
+        "perpanjang": 311000,
+        "link" : "/paket-portal-berita-desain",
+        "desain" : "16 pilihan desain",
+        "fitur": []
+    },
+    {
+        "nama": "Paket Portal Berita Custom",
+        "harga": 1190000,
+        "paket" : "website_berita",
+        "hosting": "250MB",
+        "bandwith": "25GB",
+        "perpanjang": 381000,
+        "link" : "/paket-portal-berita-custom-desain",
+        "desain" : "Desain professional, mewah dan custom (bisa mengajukan desain sendiri)",
+        "fitur": []
+    },
+    {
+        "nama": "Paket Toko Online Biasa",
+        "harga": 390000,
+        "paket" : "website_tokoonline",
+        "hosting": "150MB",
+        "bandwith": "15GB",
+        "perpanjang": 311000,
+        "link" : "/paket-portal-berita-desain",
+        "desain" : "16 pilihan desain",
+        "fitur": []
+    },
+    {
+        "nama": "Paket Toko Online Custom",
+        "harga": 1190000,
+        "paket" : "website_tokoonline",
+        "hosting": "250MB",
+        "bandwith": "25GB",
+        "perpanjang": 381000,
+        "link" : "/paket-portal-berita-custom-desain",
+        "desain" : "Desain professional, mewah dan custom (bisa mengajukan desain sendiri)",
+        "fitur": []
+    },
+    {
+        "nama": "Paket Marketplace Biasa",
+        "harga": 390000,
+        "paket" : "website_marketplace",
+        "hosting": "150MB",
+        "bandwith": "15GB",
+        "perpanjang": 311000,
+        "link" : "/paket-portal-berita-desain",
+        "desain" : "16 pilihan desain",
+        "fitur": []
+    },
+    {
+        "nama": "Paket Marketplace Custom",
+        "harga": 1190000,
+        "paket" : "website_marketplace",
+        "hosting": "250MB",
+        "bandwith": "25GB",
+        "perpanjang": 381000,
+        "link" : "/paket-portal-berita-custom-desain",
+        "desain" : "Desain professional, mewah dan custom (bisa mengajukan desain sendiri)",
+        "fitur": []
+    },
+    {
+        "nama": "Paket Iklan Baris Biasa",
+        "harga": 390000,
+        "paket" : "website_iklanbaris",
+        "hosting": "150MB",
+        "bandwith": "15GB",
+        "perpanjang": 311000,
+        "link" : "/paket-iklan-baris-desain",
+        "desain" : "16 pilihan desain",
+        "fitur": []
+    },
+    {
+        "nama": "Paket Iklan Baris Custom",
+        "harga": 1190000,
+        "paket" : "website_iklanbaris",
+        "hosting": "250MB",
+        "bandwith": "25GB",
+        "perpanjang": 381000,
+        "link" : "/paket-iklan-baris-custom-desain",
+        "desain" : "Desain professional, mewah dan custom (bisa mengajukan desain sendiri)",
+        "fitur": []
+    },
+    {
+        "nama": "Paket Elearning Custom",
+        "harga": 1190000,
+        "paket" : "website_elearning",
+        "hosting": "250MB",
+        "bandwith": "25GB",
+        "perpanjang": 381000,
+        "link" : "/paket-elearning-sia-desain",
+        "desain" : "Desain professional, mewah dan custom (bisa mengajukan desain sendiri)",
+        "fitur": []
+    }
+]

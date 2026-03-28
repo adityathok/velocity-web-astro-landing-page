@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.vue';
+import PageContent from '../components/PageContent.vue';
+import HargaWebData from '../components/HargaWebData.vue';
+import { Image } from 'astro:assets';
+import ImgHeroHargaWeb from '../assets/hero-hargaweb.webp';
+---
+
+<Layout
+    title="Tentang Kami"
+>		
+	<div id="container">
+		<main>	
+
+            <PageHero client:load>                
+                <div class="flex md:flex-row flex-col items-center justify-between gap-10 xl:py-20">
+
+                    <div class="md:basis-1/2 text-center md:text-left">
+                        <h1 class="text-3xl xl:text-4xl font-bold mt-15 mb-5">
+                            Harga Web
+                        </h1>
+                        <p class="text-sm xl:text-lg">
+                            Daftar harga layanan pembuatan website terbaik dengan biaya terjangkau. Dapatkan performa tinggi untuk website dan aplikasi.
+                        </p>
+                    </div>
+                    <div class="md:text-end">
+                        <Image src={ImgHeroHargaWeb} alt="Hero image" class="max-h-50 md:max-h-[12em] xl:max-h-[25em] object-contain" width="400"/>
+                    </div>
+
+                </div>
+            </PageHero>
+
+            <div class="bg-blue-50">
+                <PageContent>
+                <HargaWebData class="py-20" client:load/>
+                </PageContent>
+            </div>
+
+        </main>	          
+    </div>
+</Layout>
