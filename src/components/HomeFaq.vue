@@ -8,17 +8,17 @@
             <p class="text-center mb-6 md:mb-10">Pertanyaan yang sering ditanyakan seputar pembuatan website</p>
 
             <div class="space-y-3">
-                <div v-for="item,index in faqs" :key="index" class="group shadow hover:shadow-md rounded-md bg-white">
+                <div v-for="item,index in faqs" :key="index" class="group shadow hover:shadow-md rounded-xl bg-white">
                     <button @click="changeActive(index)" type="button" class="px-6 py-6 w-full flex items-center cursor-pointer gap-3 group-hover:text-sky-700">
                         <span>
-                            <CircleMinus v-if="tabActive == index" class="w-5 h-5"/>
-                            <CirclePlus v-else class="w-5 h-5"/>
+                            <CircleMinus v-if="tabActive == index" class="w-5 h-5 text-blue-600"/>
+                            <CirclePlus v-else class="w-5 h-5 text-blue-500"/>
                         </span>
                         <div class="font-medium text-left text-slate-700">
                             {{ item.question }}
                         </div>
                     </button>
-                    <div class="px-6 pb-6 text-slate-600" :class="tabActive == index?'block':'hidden'">
+                    <div class="px-6 pb-6 text-slate-600 text-sm" :class="tabActive == index?'block':'hidden'">
                         {{ item.answer }}
                     </div>
                 </div>
@@ -32,9 +32,9 @@
 import { ref } from 'vue'
 import { CirclePlus,CircleMinus } from 'lucide-vue-next';
 
-const tabActive = ref(0)
+const tabActive = ref(100)
 const changeActive = (val) => {
-    tabActive.value = Number(val)
+    tabActive.value = tabActive.value !== val?Number(val):100
 }
 
 const faqs = [
