@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import PageHero from '../components/PageHero.vue';
 import PageContent from '../components/PageContent.vue';
 import HargaWebData from '../components/HargaWebData.vue';
+import HargaWebUnggulan from '../components/HargaWebUnggulan.vue';
 import { Image } from 'astro:assets';
 import ImgHeroHargaWeb from '../assets/hero-hargaweb.webp';
 ---
@@ -33,9 +34,10 @@ import ImgHeroHargaWeb from '../assets/hero-hargaweb.webp';
 
             <div class="bg-blue-50">
                 <PageContent>
-                <HargaWebData class="py-20" client:load/>
+                    <HargaWebData class="py-20 md:pb-40" client:load/>
                 </PageContent>
             </div>
+            <HargaWebUnggulan/>
 
         </main>	          
     </div>
