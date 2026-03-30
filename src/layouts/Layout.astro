@@ -29,15 +29,23 @@ const {
 		<title>{title} | {description}</title>
 		<meta name="description" content={description} />
 		<meta name="keywords" content={keywords} />
-
-		 <!-- Robots -->
-		{noindex && <meta name="robots" content="noindex, nofollow" />}
+		
+		<!-- Google / Search Engine Tags -->
+		<meta itemprop="name" content={title+' | '+description} />
+		<meta itemprop="description" content={description} />
+		<meta itemprop="image" content={image} />
 
 		<!-- Open Graph -->
-		<meta property="og:title" content={title} />
+		<meta property="og:title" content={title+' | '+description} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={image} />
 		<meta property="og:type" content="website" />
+
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title+' | '+description} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={image} />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
