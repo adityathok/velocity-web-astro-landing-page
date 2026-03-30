@@ -6,30 +6,36 @@
                 Telah Dipercaya Oleh
             </h2>
 
-            <Swiper                
-                :loop="true"
-                :autoplay="{ delay: 2000 }"
-                :freeMode="true"
-                :modules="modules"
-                :breakpoints="{
-                    0: { slidesPerView: 1 },
-                    640: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                    1280: { slidesPerView: 5 }
-                }"
-            >
-                <SwiperSlide v-for="(item, i) in items" :key="i">
-                    <div class="text-center px-4 group">
-                        <img :src="item.img.src" class="h-20 mx-auto opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0" :alt="'klien '+item.title" loading="lazy"/>
-                        <div class="text-sm text-slate-600 mt-1 px-4">{{ item.title }}</div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>                    
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-2 xl:gap-10">
+                <div class="md:col-span-4 xl:col-span-5">
+                    <Swiper                
+                        :loop="true"
+                        :autoplay="{ delay: 3000 }"
+                        :freeMode="true"
+                        :modules="modules"
+                        :breakpoints="{
+                            0: { slidesPerView: 2 },
+                            640: { slidesPerView: 3 },
+                            1024: { slidesPerView: 3 },
+                            1280: { slidesPerView: 4 }
+                        }"
+                    >
+                        <SwiperSlide v-for="(item, i) in items" :key="i">
+                            <div class="text-center px-4 group">
+                                <img :src="item.img.src" class="h-20 mx-auto opacity-70 grayscale transition-all group-hover:opacity-100 group-hover:grayscale-0" :alt="'klien '+item.title" loading="lazy"/>
+                                <div class="text-xs md:text-sm text-slate-600 mt-1 px-4">{{ item.title }}</div>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+                <div class="text-center md:text-right md:col-span-2 xl:col-span-1">                 
                     <Button :link="'/klien-kami'" color="secondary" class="text-center mt-5 xl:mt-10">
                         5.000+ <br>Klien lainnya
                     </Button>
-                </SwiperSlide>
-            </Swiper>
+                </div>
+            </div>
+
+            
 
         </div>
     </section>
@@ -43,6 +49,7 @@ import ImgKlienBrimob from '../assets/klien-brimob.webp';
 import ImgKlienBeacukai from '../assets/klien-beacukai.webp';
 import ImgKlienMandiri from '../assets/klien-mandiri.webp';
 import ImgKlienKejaksaan from '../assets/klien-kejaksaan.webp';
+import ImgKlienTidore from '../assets/klien-tidore.webp';
 import Button from '../components/Button.vue';
 
 const items = [
@@ -61,6 +68,10 @@ const items = [
     {
         img: ImgKlienKejaksaan,
         title: 'Kejaksaan Negeri Kepahiang Bengkulu'
+    },
+    {
+        img: ImgKlienTidore,
+        title: 'DPRD Tidore Kepulauan'
     }
 ]
 </script>
