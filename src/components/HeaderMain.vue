@@ -62,7 +62,7 @@ const menuHeader = ref([
         title: 'Testimoni Klien'
     },
     {
-        url:'/blog',
+        url:'/artikel',
         title: 'Blog'
     },
     {

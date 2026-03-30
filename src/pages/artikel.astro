@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.vue';
+import Button from '../components/Button.vue';
+
+const jumlahArtikel = 9;
+---
+
+<Layout
+    title="Artikel"
+>	
+	<div id="container">
+		<main>	
+            <PageHero title="Artikel" client:load/>
+
+            <div class="bg-slate-50 py-10">
+                <div class="mx-auto max-w-7xl min-h-0 px-6 xl:px-4 py-10 block">
+                    
+                    <div class="grid md:grid-cols-3 gap-4 md:gap-10">
+                    {Array.from({ length: jumlahArtikel }).map((_, index) => (
+                        <div class="bg-white rounded shadow hover:shadow-md">
+                            <div class="bg-gray-300 h-50 flex items-center justify-center">                                
+                                <span class="text-3xl font-extrabold text-gray-400">{index+1}</span>
+                            </div>
+                            <div class="p-6 text-sm">
+                                <h2 class="font-bold text-lg mb-2">
+                                    Lorem ipsum dolor sit amet
+                                </h2>
+                                <div class="text-xs mb-1 text-slate-500">
+                                    By admin / 20/12/22
+                                </div>
+                                <p>
+                                    Suspendisse pharetra tortor in imperdiet consequat. Curabitur vitae ex id sem aliquet aliquet viverra ac elit. Aenean eu turpis at mauris sodales sodales.
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </main>	          
+    </div>
+</Layout>
