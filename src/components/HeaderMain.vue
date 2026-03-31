@@ -46,7 +46,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import velocityLogo from '../assets/velocity-logo.png';
+import velocityLogo from '../assets/velocity-logo.webp';
 import { X } from 'lucide-vue-next';
 
 defineProps({

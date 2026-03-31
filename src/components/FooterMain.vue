@@ -4,7 +4,7 @@
         <div class="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-10 text-sm/6">
             
             <div>                
-                <img :src="velocityLogo.src" class="mr-3 h-6 sm:h-10 mb-10" alt="Velocity Logo" />
+                <img :src="velocityLogo.src" class="mr-3 h-6 sm:h-10 mb-10" alt="Velocity Logo" loading="lazy"/>
 
                 <div>
                     <p>
@@ -90,8 +90,8 @@
 </template>
 
 <script setup>
-import velocityLogo from '../assets/velocity-logo.png';
-import ImgTimVelocity from '../assets/tim_velocity.jpg';
+import velocityLogo from '../assets/velocity-logo.webp';
+import ImgTimVelocity from '../assets/tim_velocity.webp';
 
 const currentYear = new Date().getFullYear();
 
