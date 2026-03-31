@@ -39,44 +39,44 @@ const changeActive = (val) => {
 
 const faqs = [
   {
-    question: "Apa saja layanan yang ditawarkan?",
-    answer: "Kami menyediakan jasa pembuatan website mulai dari company profile, toko online, landing page, hingga web custom sesuai kebutuhan bisnis Anda. Termasuk redesign, maintenance, dan optimasi performa."
+    question: "Pengerjaan berapa lama?",
+    answer: "Lama pengerjaan 3 hari sampai 10 hari kerja, menyesuaikan paket yang dipilih"
   },
   {
-    question: "Berapa harga pembuatan website?",
-    answer: "Harga tergantung kebutuhan. Website sederhana mulai dari ratusan ribu hingga jutaan rupiah, sementara sistem custom bisa lebih tinggi. Kami tidak menggunakan paket kaku."
+    question: "Apakah bisa DP untuk pembayarannya?",
+    answer: "Bisa, Untuk menjaga kenyamanan bertransaksi kami menyediakan opsi pembayaran DP 50%."
   },
   {
-    question: "Berapa lama proses pembuatan website?",
-    answer: "Rata-rata 3–14 hari kerja untuk website standar. Project kompleks bisa lebih lama tergantung fitur dan revisi."
+    question: "Apakah bisa dibantu memasarkan produk kami di dunia online?",
+    answer: "Bisa, kami punya tim pemasaran iklan google yang berpengalaman."
   },
   {
-    question: "Apakah saya bisa request desain sendiri?",
-    answer: "Bisa. Anda dapat mengirim referensi desain atau kami bantu arahkan sesuai kebutuhan bisnis Anda."
-  },
-  {
-    question: "Apakah sudah termasuk domain dan hosting?",
+    question: "Apakah bisa meningkatkan omzet usaha?",
     answer: "Bisa termasuk atau tidak, tergantung kebutuhan. Kami bisa bantu dari nol atau hanya development saja."
   },
   {
-    question: "Apakah website bisa diupdate sendiri?",
-    answer: "Bisa. Kami menggunakan CMS atau sistem dengan dashboard agar Anda dapat mengelola konten tanpa coding."
+    question: "Apakah dapat email bisnis?",
+    answer: "Dapat, anda akan mendapat email bisnis profesional sesuai nama domain anda contoh: nama@domain.com"
   },
   {
-    question: "Apakah website sudah SEO-friendly?",
-    answer: "Struktur dasar SEO sudah diterapkan, namun hasil SEO juga bergantung pada konten dan strategi lanjutan."
+    question: "Apakah ada tutorial penggunakaan websitenya?",
+    answer: "Ada, kami menyediakan tutorial pengelolaan website."
   },
   {
-    question: "Apakah ada support setelah website selesai?",
-    answer: "Ya. Kami menyediakan support setelah project selesai untuk perbaikan bug dan bantuan teknis."
+    question: "Apakah ada pemanduan jika mau mengedit web atau posting artikel/ berita?",
+    answer: "Ada, kami bantu anda lewat wa, telpon, maupun berbagi layar komputer, sesuai permintaan anda."
   },
   {
-    question: "Apakah bisa tambah fitur di kemudian hari?",
-    answer: "Bisa. Website dirancang fleksibel agar dapat dikembangkan sesuai kebutuhan bisnis Anda."
+    question: "Apakah dibantu perbaikan jika web kena hacker?",
+    answer: "Ya, kami bantu perbaikan jika kena hacker"
   },
   {
-    question: "Apa yang perlu disiapkan sebelum membuat website?",
-    answer: "Minimal domain (jika ada), konten (teks, gambar, logo), dan gambaran bisnis. Kami bisa bantu jika belum lengkap."
+    question: "Apa yang perJika website rusak/error bagaimana?.",
+    answer: "akan dibantu mengatasi kerusakan oleh tim support kami, tim support kami online setiap hari tanpa libur"
+  },
+  {
+    question: "Apakah data hilang jika website rusak?",
+    answer: "Data tidak hilang, data masih kami simpan dalam sistem backup yang mumpuni dengan teknologi terbaru"
   }
 ]
 </script>
